@@ -1,0 +1,4 @@
+编号/课程/地点/老师/
+1/CHinese/wangping/Friday/
+2/English/zhangping/Monday/
+3/Math/Wangting/Sunday/
