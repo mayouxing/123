@@ -47,7 +47,7 @@
 
       注册页面
       
-      ![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425421.png)
+ ![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425421.png)
       
       JLabel jl2 = new JLabel("请输入你的编号：");
 			JLabel jl3 = new JLabel("请输入你的姓名：");
@@ -66,4 +66,55 @@
                             
       登录页面
       
-      ![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425421.png)
+ ![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425421.png)
+ 
+         this.repaint();
+			con = new JFrame().getContentPane();
+			jl = new JLabel("亲爱的" + stu_name + "同学" , JLabel.LEFT);
+			JLabel  jl2 = new JLabel("你目前的课程状态:",JLabel.LEFT);
+			JLabel jl3 = new JLabel(classname + "   老师:" + teacher);
+			JLabel jl4 = new JLabel("");
+			JLabel jl5 = new JLabel("");
+			JLabel jl6 = new JLabel("");
+			jb = new JButton("学生选课");
+			JButton jb1 = new JButton("查看课表");
+			
+			JButton jb2= new JButton("结束");
+        
+	 选课操作
+	 
+![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425423.png)
+          
+	  JPanel jp = new JPanel();
+		JTextArea jtf = new JTextArea(10,30);
+		jtf.setLineWrap(true);
+		jtf.setFont(new Font("宋体",Font.PLAIN,30));
+		String s1 = "";
+		String temp = "";
+		try {
+			File f = new File("Class.txt");
+			FileReader f1 = new FileReader(f);
+			BufferedReader read = new BufferedReader(new java.io.InputStreamReader(new FileInputStream(f),"UTF-8"));
+			String s;
+			
+			while( (s = read.readLine()) != null ){
+				String[] strs = s.split( "/" );
+				temp = get_Student(strs[1]);
+				s1 = s1+s+temp +'\n';
+         选课成功提示
+	 
+![image]（https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425424.png）
+
+         返回选课页面，课程提示
+	 
+![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425425.png)
+          
+	  打印课表
+	
+![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425426.png)
+      
+ 实验总结
+        这次实验总体难度较高，写的时候，出现很多错误，修改起来比较麻烦。自己写代码的时候，感觉很吃力，对一些知识点了解不够，在实现文件读取等等，很长时间才能解决那个问题。自己以后还需要多练习Java。
+	
+       
+
