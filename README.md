@@ -29,3 +29,41 @@
 
       登录页面
  ![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20191211142542.png)
+ 
+ JLabel jl2 = new JLabel("请输入你的编号：");	
+				JLabel jl4 = new JLabel("请输入你的密码：");
+				
+				jt = new JTextField(10);
+				jp.add(jl2);
+				JTextField jt1 = new JTextField(10);
+				jp.add(jt1);
+				jp.add(jl4);
+				JTextField jt3 = new JTextField(10);
+				jp.add(jt3);
+				jb.addActionListener(com);
+				jb2.addActionListener(com);
+				com.jc = jc;
+				com.delu_number = jt1;
+
+      注册页面
+      
+      ![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425421.png)
+      
+      JLabel jl2 = new JLabel("请输入你的编号：");
+			JLabel jl3 = new JLabel("请输入你的姓名：");
+			JLabel jl4 = new JLabel("请输入你的密码：");
+			
+			jt = new JTextField(10);
+			jp.add(jl2);
+			JTextField jt1 = new JTextField(10);
+			jp.add(jt1);
+			jp.add(jl3);
+			JTextField jt2 = new JTextField(10);
+			jp.add(jt2);
+			jp.add(jl4);
+			JTextField jt3 = new JTextField(10);
+			jp.add(jt3);
+                            
+      登录页面
+      
+      ![image](https://github.com/mayouxing/123/blob/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_201912111425421.png)
